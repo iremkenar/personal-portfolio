@@ -87,6 +87,164 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /*General Styles */ 
+
+   html {
+    font-size: 16px;
+   }
+
+   body {
+    font-size: 1em;
+   }
+
+   h1 {
+
+   }
+
+   h2 {
+
+   }
+
+   ul {
+
+   }
+
+   a {
+
+   }
+
+   p {
+
+   }
+
+   .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+   }
+
+   /* ------ Base Header - Footer Styles ----------*/
+
+   header,
+   footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
+   header {
+
+   }
+
+   header .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
+   header nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
+   header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   }
+
+   header nav ul li {
+
+   }
+
+   footer {
+
+   }
+
+   footer p {
+
+   }
+
+
+   /* ------ Mobile Styles - Homepage ---------*/
+
+   /*Hero area*/
+
+   header .hero-area {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
+   /*Portfolio*/
+
+   #portfolio .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+
+   #portfolio .title-wrapper {
+
+   }
+
+   .tag-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+
+   }
+
+   .thumbnails-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+
+   }
+
+   /*About*/
+
+   #about .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+   } 
+
+   .portrait {
+
+   }
+
+
+   /*Footer*/
+
+   .contact-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column wrap;
+
+   }
+
+   .social-icons {
+
+   }
+
+   .copyright {
+
+   }
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
