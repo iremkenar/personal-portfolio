@@ -94,15 +94,19 @@ textarea {
    }
 
    body {
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
+    color: #EFEFF0;
    }
 
    h1 {
-
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
    }
 
    h2 {
-
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125em;
    }
 
    ul {
@@ -112,19 +116,27 @@ textarea {
    }
 
    a {
+    font-size: 1.125em;
+    text-decoration: none;
+    color: #542222;
+    width: 100%;
+   }
 
+  a:hover {
+    color: #FFFFFF;
    }
 
    p {
-
+    line-height: 1.285em;
+    font-size: 1.125em;
    }
 
    img {
-
+    width: 100%;
    }
 
    figure {
-
+    margin: 0;
    }
 
    .content-wrapper {
@@ -145,43 +157,130 @@ textarea {
   /* ------- Header ------*/
 
    header {
-
+    background: url('../img/aletsch-arena2.jpg') center no-repeat #999;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 55%;
+    min-height: 700px;
    }
 
    header .content-wrapper {
+    width: 80%;
     display: flex;
+    background-color: #542B2C;
+    opacity: 85%;
+    border-radius: 16px;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
    }
 
    header nav {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    margin: 20px 0 0 0;
    }
 
    header nav ul {
-     width: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
    }
 
    header nav ul li {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #542222;
+    background: #FFFFFF;
+    opacity: 80%;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 5px;
 
    }
+
+   header nav ul li:hover {
+    background: #542222;
+   }
+
+   #portfolio-button {
+    background: #532121;
+   }
+
+   #portfolio-button a {
+    color:#FCFDFD;
+   }
+
+   #portfolio-button:hover {
+    background: #FCFDFD;
+   }
+
+   #portfolio-button a:hover {
+    color: #542222;
+   }
+  
+   header .intro {
+    font-family: 'Roboto Slab', serif;
+    padding: 40px 10px 60px 10px;
+    margin: 0;
+   }
+
+   header span {
+     font-weight: bold;
+   }
+
+  .down-button a {
+    display: inline-block;
+    border-radius: 50%;
+  }
+  
+  .down-button a:hover .down-arrow {
+    border: 0.4em solid #532121;
+  }
+  
+  .down-button a:hover .down-arrow:after {
+    border-top: 0.4em solid #532121;
+    border-right: 0.4em solid #532121;
+  }
+
+   .down-arrow {
+    display: inline-block;
+    margin-bottom: 50px;
+    width: 3em;
+    height: 3em;
+    border: 0.4em solid #333;
+    border-radius: 50%;
+    margin-left: 0.75em;
+  }
+  
+  .down-arrow:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.4em;
+    margin-left: 0.6em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.4em solid #333;
+    border-right: 0.4em solid #333;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
 
    /* ------ Mobile Styles - Homepage ---------*/
 
    /*Hero area*/
 
    header .hero-area {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
    }
 
    /*Portfolio*/
@@ -205,14 +304,16 @@ textarea {
    }
 
    .tag-wrapper {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     flex-flow: row wrap;
+    width: 83%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
 
    }
 
    .thumbnails-wrapper {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,6 +332,7 @@ textarea {
    }
 
    #about .content-wrapper {
+    width: 83%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,11 +347,16 @@ textarea {
    /*Footer*/
 
    footer {
+    background: url('../img/aletsch-arena2.jpg') center no-repeat #999;
+    background-size: cover;
+    opacity: 0.65;
+    background-attachment: fixed;
     flex-direction: column;
+    text-align: center;
     }
 
     footer .content-wrapper {
-      
+      width: 50%;
     }
 
     .contact-content {
@@ -271,7 +378,13 @@ textarea {
     }
 
     .copyright {
+      width: 100%;
+      margin: 20px 0;
+    }
 
+    .copyright p {
+      margin: 0;
+      font-size: 0.875em;
     }
 
 
@@ -364,9 +477,28 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles here */
 }
+
+/* General styles */
+
+.content-wrapper {
+  
+}
+
+/* Header */
+
+/* Hero Area */
+
+/* Portfolio */
+
+/* About */
+
+/* Footer */
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
