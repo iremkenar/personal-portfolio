@@ -18,8 +18,12 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome CDN version 5.13 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -44,11 +48,11 @@
             <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
-    </div>
-    <div class="down-button">
-      <a href="#portfolio">
-        <span class="down-arrow"></span>
-      </a>
+      <div class="down-button">
+        <a href="#portfolio">
+          <span class="down-arrow"></span>
+        </a>
+      </div>
     </div>
   </header>
    
@@ -56,41 +60,88 @@
     <section id="portfolio">
       <div class="content-wrapper">
         <div class="title-wrapper">
-          <h1>Portfolio</h1>
+          <h1 class="portfolio-title">Portfolio</h1>
+          <div class="underline"></div>
         </div>
         <div class="tag-wrapper">
-          <h2>HTML5 &amp; CSS3</h2>
-          <h2>responsive</h2>
-          <h2>flexbox</h2>
-          <h2>design</h2>
-          <h2>adobe xd</h2>
-          <h2>javascript</h2>
-          <h2>wordpress</h2>
-          <h2>php</h2>
+          <button id="show_tag" onclick="show_all()">all</button>
+          <button id="show_html" onclick="show_html()">HTML5 &amp; CSS3</button>
+          <button id="show_responsive" onclick="show_responsive()">responsive &amp; flexbox</button>
+          <button id="show_design" onclick="show_design()">design &amp; adobe xd </button>
+          <button id="show_javascript" onclick="show_javascript()">javascript</button>
+          <button id="show_wordpress" onclick="show_wordpress()">wordpress &amp; php</button>     
         </div>
+        
         <div class="thumbnails-wrapper">
-            <figure>
+            <figure id="jubilee-austen" class="tag html">
+              <img src="img/jubilee-austen.png" alt="jubilee austen website thumbnail" class="image">
+              <div class="overlay">
+                <a href="https://iremkenar.github.io/Jubilee-Austen/" target="_blank"><i class="fas fa-eye"></i></a>
+                <a href="https://github.com/iremkenar/Jubilee-Austen" target="_blank"><i class="fas fa-code"></i></a>
+              </div>
+              
             </figure>
-            <figure>
+            <figure id="unplugged" class="tag html responsive">
+              <img src="img/unplugged.png" alt="unplugged website thumbnail" class="image">
+              <div class="overlay">
+                <a href="https://iremkenar.github.io/unplugged-2020-responsive-website/" target="_blank"><i class="fas fa-eye"></i></a>
+                <a href="https://github.com/iremkenar/unplugged-2020-responsive-website" target="_blank"><i class="fas fa-code"></i></a>
+              </div>
             </figure>
-            <figure>
+            <figure id="wordpress" class="tag wordpress">
+              <img src="img/wordpress.png" alt="wordpress website thumbnail" class="image">
+              <div class="overlay">
+                <a href="http://iremkenar.site/" target="_blank"><i class="fas fa-eye"></i></a>
+                <a href="https://github.com/iremkenar/WordPress-SC-theme-project" target="_blank"><i class="fas fa-code"></i></a>
+              </div>
             </figure>
-            <figure>
+            <figure id="magicball" class="tag javascript">
+              <img src="img/magic-8-ball.png" alt="magic 8 ball thumbnail" class="image">
+              <div class="overlay">
+                <a href="https://iremkenar.github.io/magic-8-ball-project/" target="_blank"><i class="fas fa-eye"></i></a>
+                <a href="https://github.com/iremkenar/magic-8-ball-project" target="_blank"><i class="fas fa-code"></i></a>
+              </div>
             </figure>
-            <figure>
+            <figure id="dorothy" class="tag design">
+              <img src="img/dorothy-delong.png" alt="dorothy design thumbnail" class="image">
+              <div class="overlay">
+                  <a href="https://xd.adobe.com/view/191c1984-91a1-4fb3-7321-e1cf89515628-6f2d/" target="_blank"><i class="fas fa-eye"></i></a>
+                  <!--<a href="" target="_blank"><i class="fas fa-code"></i></a>-->
+              </div>
             </figure>
-            <figure>
+            <figure id="vision-board" class="tag html">
+              <img src="img/visionboard.png" alt="vision board thumbnail" class="image">
+              <div class="overlay">
+                  <a href="https://iremkenar.github.io/Vision-Board-Project/" target="_blank"><i class="fas fa-eye"></i></a>
+                  <a href="https://github.com/iremkenar/Vision-Board-Project" target="_blank"><i class="fas fa-code"></i></a>
+              </div> 
             </figure>
-            <figure>
+            <figure id="lolcat" class="tag javascript">
+              <img src="img/lolcat-clock.png" alt="lolcat clock thumbnail" class="image">
+              <div class="overlay">
+                  <a href="https://iremkenar.github.io/lolcat-clock-project/" target="_blank"><i class="fas fa-eye"></i></a>
+                  <a href="https://github.com/iremkenar/lolcat-clock-project" target="_blank"><i class="fas fa-code"></i></a>
+              </div>
             </figure>
-            <figure>
+            <figure id="election" class="tag javascript">
+              <img src="img/us-election-map.png" alt="election map thumbnail" class="image">
+              <div class="overlay">
+                <a href="https://iremkenar.github.io/election-map/" target="_blank"><i class="fas fa-eye"></i></a>
+                <a href="https://github.com/iremkenar/election-map" target="_blank"><i class="fas fa-code"></i></a>
+              </div>
             </figure>
-            <figure>
+            <figure id="rogue" class="tag html responsive">
+              <img src="img/rogue-pickings.png" alt="rogue picking website thumbnail" class="image">
+              <div class="overlay">
+                <a href="https://iremkenar.github.io/206-making-rogue-pickings-responsible/" target="_blank"><i class="fas fa-eye"></i></a>
+                <a href="https://github.com/iremkenar/206-making-rogue-pickings-responsible" target="_blank"><i class="fas fa-code"></i></a>
+              </div>           
             </figure>
         </div>
-        <div class="title-wrapper">
+        <!--<div class="title-wrapper">
           <h2>More</h2>
-        </div> 
+          <div class="underline"></div>
+        </div>-->
       </div>
   </section>
    
@@ -99,6 +150,7 @@
       <h1>About me</h1>
       <article>
         <figure id="portrait">
+          <img src="img/irem-portrait.png" alt="irem portrait">
         </figure>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
       </article>
@@ -112,13 +164,22 @@
     <div class="content-wrapper">
       <div class="contact-content">
           <h1>Get in touch</h1>
-            <div class="social-icons">
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
+          <div class="social-icons">
+              <p>
+                <a href="https://www.linkedin.com/in/iremkenar/" target="_blank"><i class="fab fa-linkedin-in"></i></a></p>
+              <p>
+                <a href="https://twitter.com/kenar_irem" target="_blank"><i class="fab fa-twitter"></i></a>
+              </p>
+              <p>
+                <a href="https://github.com/iremkenar" target="_blank"><i class="fab fa-github"></i></a>
+              </p>
+              <p>
+                <a href="https://www.instagram.com/irem.kenar/" target="_blank"><i class="fab fa-instagram"></i></a>
+              </p>
             </div>
-            <a href="mailto:irem.kenar@outlook.com">irem.kenar@outlook.com</a>
+            <div id="email">
+              <a href="mailto:irem.kenar@outlook.com">irem.kenar@outlook.com</a>
+            </div>
           </div>
         </div>
       </div>
