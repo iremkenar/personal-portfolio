@@ -87,421 +87,427 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /*General Styles */ 
+  /*General Styles */ 
 
-   html {
-    font-size: 16px;
-   }
+html {
+  font-size: 16px;
+}
 
-   body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    color: #EFEFF0;
-   }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #EFEFF0;
+}
 
-   h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-   }
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+}
 
-   h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.125em;
-   }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-   }
+a {
+  font-size: 1.125em;
+  text-decoration: none;
+  color: #542222;
+  width: 100%;
+}
 
-   a {
-    font-size: 1.125em;
-    text-decoration: none;
-    color: #542222;
-    width: 100%;
-   }
-
-  a:hover {
-    color: #FFFFFF;
-   }
-
-   p {
-    line-height: 1.285em;
-    font-size: 1.125em;
-   }
-
-   img {
-    width: 100%;
-   }
-
-   figure {
-    margin: 0;
-   }
-
-   .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-   }
-
-   /* ------ Base Header - Footer Styles ----------*/
-
-   header,
-   footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
-
-  /* ------- Header ------*/
-
-   header {
-    background: url('../img/aletsch-arena2.jpg') center no-repeat #999;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 55%;
-    min-height: 700px;
-   }
-
-   header .content-wrapper {
-    width: 80%;
-    display: flex;
-    background-color: #542B2C;
-    opacity: 85%;
-    border-radius: 16px;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0;
-   }
-
-   header nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 20px 0 0 0;
-   }
-
-   header nav ul {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
-   }
-
-   header nav ul li {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #542222;
-    background: #FFFFFF;
-    opacity: 80%;
-    border-radius: 5px;
-    padding: 5px 20px;
-    margin: 5px;
-
-   }
-
-   header nav ul li:hover {
-    background: #542222;
-   }
-
-   #portfolio-button {
-    background: #532121;
-   }
-
-   #portfolio-button a {
-    color:#FCFDFD;
-   }
-
-   #portfolio-button:hover {
-    background: #FCFDFD;
-   }
-
-   #portfolio-button a:hover {
-    color: #542222;
-   }
-  
-   header .intro {
-    font-family: 'Roboto Slab', serif;
-    padding: 40px 10px 60px 10px;
-    margin: 0;
-   }
-
-   header span {
-     font-weight: bold;
-   }
-
-  .down-button a {
-    border-radius: 50%;
-  }
-  
-  .down-button a:hover .down-arrow {
-    border: 0.4em solid #532121;
-  }
-  
-  .down-button a:hover .down-arrow:after {
-    border-top: 0.4em solid #532121;
-    border-right: 0.4em solid #532121;
+a:hover {
+  color: #FFFFFF;
   }
 
-   .down-arrow {
-    width: 3em;
-    height: 3em;
-    border: 0.4em solid #542B2C;
-    border-radius: 50%;
-    display: flex;
-    margin-top: 150px;
-  }
-  
-  .down-arrow:after {
-    content: '';
-    display: inline-block;
-    margin-top: 0.4em;
-    margin-left: 0.6em;
-    width: 1.4em;
-    height: 1.4em;
-    border-top: 0.4em solid #542B2C;
-    border-right: 0.4em solid #542B2C;
-    -moz-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-  }
+p {
+  line-height: 1.285em;
+  font-size: 1.125em;
+}
 
-   /* ------ Mobile Styles - Homepage ---------*/
+img {
+  width: 100%;
+}
 
-   /*Hero area*/
+figure {
+  margin: 0;
+}
 
-   header .hero-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 
-   /*Portfolio*/
+/* ------ Base Header - Footer Styles ----------*/
 
-   #portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-   #portfolio .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
+/* ------- Header ------*/
 
-   #portfolio .title-wrapper {
-    color: #707070;
-    margin: 0;
-    text-align: center;
-   }
+header {
+  background: url('../img/aletsch-arena2.jpg') center no-repeat #999;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 680px;
+}
 
-   .title-wrapper .underline {
-    width: 130px;
-    border-bottom: 2px solid #707070;
-   }
+header .content-wrapper {
+  width: 80%;
+  display: flex;
+  background-color: #542B2C;
+  opacity: 85%;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
 
-   .tag-wrapper {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 40px 0 20px 0;
-   }
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 20px 0 0 0;
+}
 
-   .tag-wrapper button {
-    background: #775B5B;
-    color: #FFFFFF;
-    border-radius: 10px;
-    padding: 0.6em 0.5em;
-    text-transform: uppercase;
-   }
+header nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
 
-   .thumbnails-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
+header nav ul li {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #542222;
+  background: #FFFFFF;
+  opacity: 90%;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin: 5px;
 
-   .thumbnails-wrapper figure {
-     width: 80%;
-     margin: 20px 0;
-     position: relative;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
+}
 
-   .thumbnails-wrapper img {
-     border-radius: 16px;
-   }
-  
-  .overlay {
-    background-color: #FCFDFD;
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    transition: .5s ease;
-   }
+header nav ul li:hover {
+  background: #542222;
+}
 
-   .thumbnails-wrapper .overlay a {
-    background-color: #542B2C;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    }
+#portfolio-button {
+  background: #532121;
+}
 
+#portfolio-button a {
+  color:#FCFDFD;
+}
 
-    .thumbnails-wrapper .overlay a i {
-    font-size: 1.3125em;
-    color: #EFEFF0;
-    }
+#portfolio-button:hover {
+  background: #FCFDFD;
+}
 
-   .thumbnails-wrapper .overlay:hover {
-    opacity: 1;
-    border: 2px solid #775B5B;
-    border-radius: 16px;
-   }
+#portfolio-button a:hover {
+  color: #542222;
+}
 
-   .thumbnails-wrapper .overlay a:hover {
-    color:#775B5B;
-   }
+header .intro {
+  font-family: 'Roboto Slab', serif;
+  padding: 40px 10px 60px 10px;
+  margin: 0;
+}
 
-   
+header span {
+  font-weight: bold;
+}
 
-   /*About*/
+.down-button a {
+  border-radius: 50%;
+}
 
-   #about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    background-color: #4E6C54;
-   }
+.down-button a:hover .down-arrow {
+  border: 0.4em solid #532121;
+}
 
-   #about .content-wrapper {
-    width: 83%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
+.down-button a:hover .down-arrow:after {
+  border-top: 0.4em solid #532121;
+  border-right: 0.4em solid #532121;
+}
 
-   #about h1 {
-     margin-bottom:40px;
-   }
+.down-arrow {
+  width: 2.5em;
+  height: 2.5em;
+  border: 0.4em solid #542B2C;
+  border-radius: 50%;
+  display: flex;
+  margin-top: 150px;
+}
 
-   #portrait img {
-    border-radius: 16px;
-   }
+.down-arrow:after {
+  content: '';
+  display: inline-block;
+  margin-top: 0.4em;
+  margin-left: 0.6em;
+  width: 1em;
+  height: 1em;
+  border-top: 0.4em solid #542B2C;
+  border-right: 0.4em solid #542B2C;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
 
-   #about p {
-     margin: 10px 0;
-     padding: 20px 0;
-   }
+/* ------ Mobile Styles - Homepage ---------*/
 
+/*Hero area*/
 
-   /*Footer*/
+header .hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 100px;
+}
 
-   footer {
-    background: url('../img/aletsch-arena2.jpg') center no-repeat #999;
-    background-size: cover;
-    background-attachment: fixed;
-    flex-direction: column;
-    text-align: center;
-    }
+/*Portfolio*/
 
-    footer .content-wrapper {
-      width: 50%;
-    }
+#portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-    .contact-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column wrap;
-      margin-bottom: 160px;
-    }
+#portfolio .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-    #contact h1 {
-      border-radius: 16px;
-      background-color: #775C5E;
-      padding: 5px 15px;
-    }
+#portfolio .title-wrapper {
+  color: #707070;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
 
-    .social-icons {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
+.title-wrapper .underline {
+  width: 130px;
+  border-bottom: 2px solid #707070;
+}
 
-    footer .social-icons p a {
-    background-color: #EFEFF0;
-    color: #542B2C;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+.tag-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 40px 0 20px 0;
+}
 
-    footer .social-icons p a:hover {
-    color: #775C5E;
-    }
+.tag-wrapper button {
+  background: #775B5B;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 0.6em 0.5em;
+  text-transform: uppercase;
+}
 
+.thumbnails-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-    footer .social-icons p i {
-    font-size: 1.3125em;
-    }
+.thumbnails-wrapper figure {
+  max-width: 450px;
+  margin: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    #email {
-      margin-top: 40px;
-    }
+.thumbnails-wrapper img {
+  border-radius: 16px;
+}
 
-    #email a {
-      color: #ccc;
-      font-weight: bold;
-      border-radius: 16px;
-      background-color: #775C5E;
-      padding: 5px 15px;
-    }
+.overlay {
+  background-color: #FCFDFD;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: .5s ease;
+}
 
-    #email a:hover {
-      color: #FCFDFD
-    }
-
-    .copyright {
-      width: 100%;
-      margin: 0;
-      background-color: #FCFDFD;
-      opacity: 70%;
-    }
-
-    .copyright p {
-      margin: 0;
-      font-size: 0.875em;
-      color: #707070
-    }
+.thumbnails-wrapper .overlay a {
+  background-color: #542B2C;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
 
 
+.thumbnails-wrapper .overlay a i {
+  font-size: 1.3125em;
+  color: #EFEFF0;
+}
+
+.thumbnails-wrapper .overlay:hover {
+  opacity: 1;
+  border: 2px solid #775B5B;
+  border-radius: 16px;
+}
+
+.thumbnails-wrapper .overlay a:hover {
+  color:#775B5B;
+}
+
+  /*About*/
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #4E6C54;
+}
+
+#about .content-wrapper {
+  width: 83%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#about article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#about figure {
+  max-width: 450px;
+}
+
+#about h1 {
+  margin-bottom:30px;
+}
+
+#portrait img {
+border-radius: 16px;
+}
+
+#about p {
+  margin: 10px 0;
+  padding: 20px 0;
+  max-width: 450px;
+}
+
+  /*Footer*/
+
+footer {
+  background: url('../img/aletsch-arena2.jpg') center no-repeat #999;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .content-wrapper {
+  width: 50%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-bottom: 160px;
+}
+
+#contact h1 {
+  border-radius: 16px;
+  background-color: #775C5E;
+  padding: 5px 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+footer .social-icons p a {
+  background-color: #EFEFF0;
+  color: #542B2C;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons p a:hover {
+  color: #775C5E;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
+#email {
+  margin-top: 40px;
+}
+
+#email a {
+  color: #ccc;
+  font-weight: bold;
+  border-radius: 16px;
+  background-color: #775C5E;
+  padding: 5px 15px;
+}
+
+#email a:hover {
+  color: #FCFDFD
+}
+
+.copyright {
+  width: 100%;
+  margin: 0;
+  background-color: #FCFDFD;
+  opacity: 70%;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 0.875em;
+  color: #707070
+}
 
 /* ==========================================================================
    Helper classes
@@ -593,26 +599,125 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   /* Tablet Styles here */
-}
 
-/* General styles */
+  /* General styles */
 
-.content-wrapper {
+   h1 {
+     font-size: 2em;
+   } 
+
+   a {
+     font-size: 1.25em;
+   }
+
+  /*Header*/
+  header .content-wrapper {
+    width: 60%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 60%; 
+  }
+
+  .intro {
+    font-size: 1.5em;
+  }
+
+  .down-button {
+    margin-top: 75px;
+  }
+
+  /*Portfolio*/
+
+  .title-wrapper .underline {
+    width: 170px;
+   }
+
+  #portfolio .tag-wrapper {
+    max-width: 600px;
+  }
+
+  .tag-wrapper button {
+    font-size: 1.25em;
+  }
+
+  #portfolio figure {
+    flex-basis: 40%;
+    margin: 10px;
+  }
+
+  /*About*/
+
+  #about .content-wrapper article {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    
+  }
+
+  #about figure, #about p {
+    width: 50%;
+    margin: 0 10px;
+  }
+
+  #about p {
+    max-width: 400px;
+  }
+} 
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+
+  /*General Styles*/
+
+  p {
+    font-size: 1.5em;
+  }
+
+  /*Portfolio*/
+
+  #portfolio .tag-wrapper {
+    max-width: 900px;
+  }
+
+  #portfolio figure {
+    flex-basis: 30%;
+    margin: 10px;
+  }
+
+  #portfolio figure #dorothy, #portfolio figure #wordpress {
+    flex-basis: 100%;
+  }
+
+  /*About*/
+
+  #about .content-wrapper h1 {
+    text-align: center;
+  }
+
+  #about p {
+    max-width: 600px;
+  }
+
+  /*Footer*/
   
-}
+  .social-icons {
+    max-width: 400px;
+  }
 
-/* Header */
+  footer .social-icons p a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.125em
+  }
 
-/* Hero Area */
+  #email a {
+    font-size: 1.375em;
+  }
 
-/* Portfolio */
-
-/* About */
-
-/* Footer */
-
-
-
+  
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
