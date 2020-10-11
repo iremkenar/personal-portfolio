@@ -155,7 +155,7 @@ header {
   background: url('../img/aletsch-arena2.jpg') center no-repeat #999;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 870px;
+  min-height: 900px;
 }
 
 header .content-wrapper {
