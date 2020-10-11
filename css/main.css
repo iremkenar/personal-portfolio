@@ -155,7 +155,7 @@ header {
   background: url('../img/aletsch-arena2.jpg') center no-repeat #999;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 680px;
+  min-height: 870px;
 }
 
 header .content-wrapper {
@@ -247,7 +247,7 @@ header span {
   border: 0.4em solid #542B2C;
   border-radius: 50%;
   display: flex;
-  margin-top: 150px;
+  margin-top: 250px;
 }
 
 .down-arrow:after {
@@ -290,6 +290,7 @@ header .hero-area {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 20px 0 50px 0;
 }
 
 #portfolio .title-wrapper {
@@ -414,6 +415,7 @@ header .hero-area {
 
 #about h1 {
   margin-bottom:30px;
+  width: 100%;
 }
 
 #portrait img {
@@ -626,7 +628,7 @@ footer .social-icons p i {
   }
 
   .down-button {
-    margin-top: 75px;
+    margin-top: 90px;
   }
 
   /*Portfolio*/
@@ -664,6 +666,7 @@ footer .social-icons p i {
 
   #about p {
     max-width: 400px;
+    font-size: 1.5em;
   }
 } 
 
