@@ -441,7 +441,9 @@ footer {
 }
 
 footer .content-wrapper {
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-content {
@@ -652,6 +654,16 @@ footer .social-icons p i {
     margin: 10px;
   }
 
+  .thumbnails-wrapper .overlay a {
+    width: 80px;
+    height: 80px;
+  }
+  
+  
+  .thumbnails-wrapper .overlay a i {
+    font-size: 1.5em;
+  }
+
   /*About*/
 
   #about .content-wrapper article {
@@ -708,7 +720,7 @@ footer .social-icons p i {
   /*Footer*/
   
   .social-icons {
-    max-width: 400px;
+    width: 100%;
   }
 
   footer .social-icons p a {
