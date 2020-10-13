@@ -451,7 +451,7 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  margin-bottom: 240px;
+  margin-bottom: 300px;
 }
 
 #contact h1 {
@@ -632,7 +632,7 @@ footer .social-icons p i {
   }
 
   .down-button {
-    margin-top: 90px;
+    margin-top: 170px;
   }
 
   /*Portfolio*/
